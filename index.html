@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Work 01</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="mx-4 pt-4">
+		<div class="row">
+			<div class="col-11 m-3">
+				<div class="row">
+					<div class="col-sm-4">
+						<span class="leader">
+							Código:
+						</span>
+					</div>
+					<div class="col-sm-8">
+						<input id="item_code" class="form-control" style="width: 100%;" type="text">
+					</div>
+				</div>
+				<div class="my-3">
+					<div class="row p-1">
+						<div class="col-sm-4">
+							<span class="leader">
+								Descripción:
+							</span>
+						</div>
+						<div class="col-sm-8">
+							<textarea id="item_decription" class="form-control" style="height:70px;width: 100%;min-height: 70px;max-height: 150px;font-size: calc(50% + 1vw + 1vh);"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 px-3">
+				<div class="row">
+					<div class="col-xs-4 col-4">
+						<span class="leader">QTY :</span>
+					</div>
+					<div class="col-4">
+						<span class="leader">Bs.</span>
+					</div>
+					<div class="col-4">
+						<span class="leader">Precio $:</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<input id="item_qty" class="form-control" style="width: 100%;" type="text">
+					</div>
+					<div class="col-4">
+						<input id="item_price" class="form-control" style="width: 100%;" type="text">
+					</div>
+					<div class="col-4">
+						<input id="item_sus" class="form-control" style="width: 100%;" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 main-content-inner">
+				<div class="row py-3">
+					<input type="button" class="mx-3 btn btn-success" onclick="m()" style="width: 100%;" value="Agregar Item" />
+				</div>
+			</div>
+		</div>
+		<div id="alert_danger" class="my-4 py-4 alert alert-danger" role="alert" style="display: none;"></div>
+		<div id="alert_success" class="my-4 py-4 alert alert-success" role="alert" style="display: none;"></div>
+		<div class="scroll-view mt-4">
+			<div class="row">
+				<div class="input-group mb-3">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" style="font-size: calc(50% + 1vw + 1vh);">Search</span>
+				  </div>
+				  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" oninput="s(this.value)">
+				</div>
+			</div>
+			<ul id="show_add_items">
+				
+			</ul>
+		</div>
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/mainLibrary.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
